@@ -1,8 +1,9 @@
 #!/bin/bash
-
+STR1=";"
+STR="$STR1$1"
 if [[ -z $1 ]];
 then
     cat | wc -l 
 else
-    cat | grep -i $1 | wc -l
+    cat | grep -i $STR | wc -l
 fi
