@@ -1,11 +1,8 @@
 #!/bin/bash
 
-echo $#
-
-echo $@
-
-echo $1
-
-echo $2
-
-read in echo $in
+if [[ -z $1 ]];
+then
+    cat    
+else
+    cat | grep -i $1 | wc -l
+fi
