@@ -1,5 +1,5 @@
 #!/bin/bash
 
-find ./ -type f | wc -l
+find ./ -type f -perm 666
 
 find . -type d
