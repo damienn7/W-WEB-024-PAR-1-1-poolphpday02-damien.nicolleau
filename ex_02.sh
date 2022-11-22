@@ -2,7 +2,7 @@
 
 if [[ -z $1 ]];
 then
-    cat    
+    cat | wc -l 
 else
     cat | grep -i $1 | wc -l
 fi
