@@ -1,5 +1,5 @@
 #!/bin/bash
 
-find ./ -type f -perm 666
+find . -type f
 
 find . -type d
